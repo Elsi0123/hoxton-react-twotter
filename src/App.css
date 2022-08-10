@@ -7,6 +7,18 @@
  margin: 10px 20px;
  align-items: center;
 }
+/* .hash{
+  display: grid;
+  grid-auto-flow: row;
+  justify-content: center;
+} */
+
+
+
+.homeButton{
+  display: grid;
+  grid-auto-flow: row;
+}
 
 .TweetLogo{
   width: 60px;
@@ -36,6 +48,8 @@
   border-radius: 40px;
 }
 
+
+
 .TweetButton button {
   width: 200px;
   background-color: rgba(49, 49, 255, 0.936);
@@ -52,13 +66,37 @@
   grid-auto-flow: row;
   margin-left: 300px ;
   padding-left: 50px;
+ 
 }
 
 .image-one{
   display: grid;
-  border-bottom: solid 0.5px;
+  border: solid rgba(188, 188, 188, 0.579) 0.5px;
+  border-radius: 10px;
+  
+}
+.userphoto{
+ display: grid;
+ grid-auto-flow: row;
 }
 
-.button-heart{
-  width: 10px;
+.heartButton{
+  width: 69px;
+  margin-top: 7px;
+  margin-left: 15px;
+  background: none;
+}
+.comments{
+  width: 69px;
+  margin-left: 70px;
+  background: none;
+}
+.sharePost{
+  width: 69px;
+  margin-left: 70px;
+  background: none;
+}
+.mainapp{
+ 
+
 }

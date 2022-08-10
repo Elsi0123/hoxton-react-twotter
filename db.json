@@ -1,0 +1,68 @@
+{
+
+    "home":[
+     {"id":1, "name":"posts"},
+     {"id":2, "name":"like"},
+     {"id":3, "name":"comments"},
+     {"id":4, "name":"share"}
+    ],
+
+    "explore": [
+        {
+          "id":1, "name": "categories"},
+        { "id":2, "name": "media"},
+        { "id":3, "name": "search"}
+    ],
+
+
+
+    "notification": [
+     {"id":1, "name":"likes"},
+     {"id":2, "name":"comments"},
+     {"id":3, "name":"share"},
+     {"id":4, "name":"newFriend"}
+    ],
+
+     "messages": [
+        {
+            "id":1, "name": "newMessages"},
+          { "id":2, "name": "delete"},
+          { "id":3, "name": "hide"}
+     ],
+
+    "bookmarks":[
+        {
+            "id":1, "name": "data"},
+          { "id":2, "name": "saved"}
+          
+    ],
+
+    "lists": [
+        {
+            "id":1, "name": "add"},
+          { "id":2, "name": "remove"},
+          { "id":3, "name": "block"}
+    ],
+     
+     "profile":[
+        {
+            "id":1, "name": "edit"},
+          { "id":2, "name": "birthdate"},
+          { "id":3, "name": "profilephoto"}
+     ],
+
+     "more":[
+        {
+            "id":1, "name": "about"},
+          { "id":2, "name": "privacy"},
+          { "id":3, "name": "security"}
+     ],
+        
+     "tweet":[
+        {
+            "id":1, "name": "read"},
+          { "id":2, "name": "click"},
+          { "id":3, "name": "checkout"}
+     ]
+
+}

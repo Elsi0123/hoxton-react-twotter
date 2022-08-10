@@ -1,55 +1,73 @@
 import { useState } from "react";
 
 export function MainMenu() {
-   
+   const [hearts, setHearts] = useState(0)
+   const [comments, setComments] = useState(0)
+   const [users, setUsers] = useState(0)
   const [posts, setPosts] = useState([
     {
       id: 1,
-      user: "Boris Johnson  8h ago ",
+      onesrc:"https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png " ,
+      user: "Boris Johnson",
       title: "Create a fighting spirit, to feel comfortable with yourself ✌",
-      likes: 9885,
       src: "https://i2-prod.mirror.co.uk/incoming/article22563786.ece/ALTERNATES/s615/2_JS217402303.jpg",
-      comments:0,
-      share:12
+      
     },
     {
       id: 2,
+      onesrc:"https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png " ,
       user: "Nicolas Marcora",
-      title: "My first coference about python",
-      likes: 194,
+      title: "My first conference about python",
       src: "https://i.ytimg.com/vi/ymMeu3foD_0/maxresdefault.jpg",
-      comments:44,
-      share:12
+      
     },
     {
+      onesrc:"https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png " ,
       id: 3,
       user: "Ed Putans",
       title: "Tower Bridge ✌✌🙌",
-      likes: 205,
       src: "https://miro.medium.com/fit/c/231/231/1*Nlc2Xfqw6cHbmAvS0u1lwg.jpeg",
-      comments:34,
-      share:12
+      
     },
-
-
-
     {
+      onesrc:"https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png " ,
       id: 4,
-      user: "CR7",
+      user: "Cristiano CR7",
       title: "Spend time with your family",
-      likes: 20577,
       src: "https://talksport.com/wp-content/uploads/sites/5/2022/04/d50a2357-d0dd-40ec-b2d7-0d93f31fac7e.jpg?strip=all&w=879&quality=100",
-      comments:8499,
-      share:12
+      
     },
     {
+      onesrc:"https://images.hindustantimes.com/img/2022/01/02/550x309/michelle_obama_barack_obama_1641094869493_1641094876814.jpg " ,
       id: 5,
+      user: "Barack Obama",
+      title: "Happy New Year everyone",
+      src: "https://images.hindustantimes.com/img/2022/01/02/550x309/michelle_obama_barack_obama_1641094869493_1641094876814.jpg",
+      
+    },
+    {
+      onesrc:"https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png " ,
+      id: 6,
+      user: "Bradd Pit",
+      title: "It's time to take a coffe!!",
+      src: "https://people.com/thmb/FcF2FtnptqRJoNAzjSvCf_XqwV0=/1500x1000/filters:fill(auto,1)/brad-pitt-delonghi1-cac20ffbb9684d4fba5c726f12ec5eb4.jpg",
+      
+    },
+    {
+      onesrc:"https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png " ,
+      id: 7,
+      user: "Jeff Bezos",
+      title: "Spend time with your family",
+      src: "https://images.hola.com/us/images/0274-14f2432b14c1-9532e54c42ae-1000/horizontal-1200/jeff-bezos-and-lauren-s-nchez.png",
+      
+    },
+    {
+      onesrc:"https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png " ,
+      id: 8,
       user: "Elon Musk",
-      title: "Tesla",
-      likes: 34123,
+      title: " Tesla",
       src: "https://abcnews.al/wp-content/uploads/2021/03/elon-musk-warning-about-ai-1612808010413_v2_900x506-780x439-1.jpg",
-      comments:5774,
-      share:12
+    
     },
   ]);
 
@@ -61,16 +79,31 @@ export function MainMenu() {
 {posts.map((post) => {
         return (
           <div className="image-one">
-            <h4>{post.user}'s post:</h4>
-            <h5>{post.title}</h5>
+           <div className="userphoto"><img src= {post.onesrc} width='30' 
+             /> 
+            <h4>
+              {post.user}'s post:</h4> 
+            </div>
+            <h5>{post.title}:</h5>
             <img
               src={post.src}
-              width={650}
+              width={500}
               
             />
-            <button className="heart-button"> ❤{post.likes} </button>
+            <div className="likeComments">
+            <button className="heartButton" onClick={() => {
+              setHearts(hearts + 1)
+            }}> ❤ {hearts}</button>
+
+            <button className="comments" onClick={() => {
+              setComments(comments + 1)
+            }}>💬{comments}</button>
+
+            <button className="sharePost" onClick={() => {
+              setUsers(users + 1)
+            }}> 📨{users} </button>
             
-  
+            </div>
 
 
 
