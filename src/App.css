@@ -1,0 +1,64 @@
+.leftMenu{
+  display: grid;
+  grid-auto-flow: row;
+  width: 200px;
+  padding-left: 30px;
+ position: fixed;
+ margin: 10px 20px;
+ align-items: center;
+}
+
+.TweetLogo{
+  width: 60px;
+  padding-left: 10px;
+  align-self: center;
+  background: none;
+  border: none; 
+}
+.TweetLogo:hover{
+  background-color: rgba(207, 207, 207, 0.579);
+  border: rgba(207, 207, 207, 0.579);
+  border-radius: 40px;
+}
+
+.menuLogo{
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.menuLogo button{
+  background: none;
+  border: none; 
+}
+.menuLogo button:hover{
+  background-color: rgba(207, 207, 207, 0.579);
+  border: rgba(207, 207, 207, 0.579);
+  border-radius: 40px;
+}
+
+.TweetButton button {
+  width: 200px;
+  background-color: rgba(49, 49, 255, 0.936);
+  text-align: center;
+  border-radius: 40px;
+}
+
+.TweetButton h4{
+  color: white;
+}
+
+.mainMenu{
+  display: grid;
+  grid-auto-flow: row;
+  margin-left: 300px ;
+  padding-left: 50px;
+}
+
+.image-one{
+  display: grid;
+  border-bottom: solid 0.5px;
+}
+
+.button-heart{
+  width: 10px;
+}
